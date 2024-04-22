@@ -1,0 +1,37 @@
+//
+// _pagination.scss
+//
+
+// Pagination rounded (Custom)
+.pagination-rounded {
+  .page-link {
+    border-radius: 30px !important;
+    margin: 0 3px;
+    border: none;
+  }
+}
+
+.pagination {
+  .page-item:first-child {
+    .page-link {
+      border-top-left-radius: var(--bs-pagination-border-radius) !important;
+      border-bottom-left-radius: var(--bs-pagination-border-radius) !important;
+    }
+  }
+  .page-item:last-child {
+    .page-link {
+      border-top-right-radius: var(--bs-pagination-border-radius) !important;
+      border-bottom-right-radius: var(--bs-pagination-border-radius) !important;
+    }
+  }
+  .page-item {
+    .page-link {
+      border-radius: 0;
+    }
+  }
+  .page-item:not(:first-child) {
+    .page-link {
+      margin-left: calc(var(--bs-border-width) * -1);
+    }
+  }
+}
