@@ -1,0 +1,33 @@
+
+// 
+// breadcrumb.scss
+//
+
+
+// Breadcrumb item arrow
+.breadcrumb-item {
+    > a {
+        color: var(--#{$prefix}body-color);
+    }
+    +.breadcrumb-item {
+        &::before {
+            color:  var(--#{$prefix}body-color);
+            content: "\f105" !important;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 700;
+        }
+    }
+}
+  
+
+
+//RTL
+
+[dir="ltr"] 
+.breadcrumb-item {
+    +.breadcrumb-item {
+        &::before {
+            content: "\f104" !important;
+        }
+    }
+}

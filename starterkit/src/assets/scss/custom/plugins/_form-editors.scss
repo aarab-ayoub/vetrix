@@ -1,0 +1,144 @@
+//
+// Form editors.scss
+//
+
+// Tinymce
+
+.tox-tinymce {
+  border: 1px solid var(--#{$prefix}border-color) !important;
+}
+
+.tox {
+  .tox-menu {
+    background-color: var(--#{$prefix}white) !important;
+    border-color: var(--#{$prefix}border-color) !important;
+  }
+  .tox-dialog {
+    background-color: var(--#{$prefix}white) !important;
+    .tox-dialog__header,
+    .tox-dialog__footer,
+    .tox-textfield,
+    .tox-listbox--select{
+      background-color: var(--#{$prefix}white) !important;
+      color: var(--#{$prefix}body-color) !important;
+      border-color: var(--#{$prefix}border-color-translucent) !important;
+    }
+    .tox-label{
+      color: var(--#{$prefix}body-color) !important;
+    }
+    .tox-button--naked{
+      color: var(--#{$prefix}body-color) !important;
+      background-color: var(--#{$prefix}secondary-bg) !important;
+      border-color: var(--#{$prefix}border-color-translucent) !important;
+    }
+  }
+  .tox-statusbar {
+    border-top: 1px solid var(--#{$prefix}border-color) !important;
+  }
+  .tox-menubar,
+  .tox-edit-area__iframe,
+  .tox-statusbar {
+    background-color: var(--#{$prefix}secondary-bg) !important;
+    background: none !important;
+  }
+  .tox-mbtn {
+    color: var(--#{$prefix}body-color) !important;
+    &:hover:not(:disabled):not(.tox-mbtn--active) {
+      background-color: var(--#{$prefix}secondary-bg) !important;
+    }
+  }
+  .tox-tbtn {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--#{$prefix}tertiary-bg) !important;
+    }
+  }
+
+  .tox-toolbar,
+  .tox-toolbar__overflow,
+  .tox-toolbar__primary {
+    background: var(--#{$prefix}tertiary-bg) !important;
+  }
+
+  .tox-tbtn {
+    color: var(--#{$prefix}body-color) !important;
+    svg {
+      fill: var(--#{$prefix}body-color) !important;
+    }
+  }
+
+  .tox-split-button {
+    &:hover {
+      box-shadow: 0 0 0 var(--#{$prefix}gray-200) !important;
+    }
+    &:focus {
+      background-color: var(--#{$prefix}gray-200) !important;
+    }
+  }
+
+  .tox-edit-area__iframe {
+    background-color: var(--#{$prefix}secondary-bg) !important;
+  }
+
+  .tox-statusbar a,
+  .tox-statusbar__path-item,
+  .tox-statusbar__wordcount {
+    color: $gray-700 !important;
+  }
+
+  &:not([dir="rtl"]) .tox-toolbar__group:not(:last-of-type) {
+    border-right: 1px solid var(--#{$prefix}border-color) !important;
+  }
+
+  .tox-toolbar-overlord {
+    .tox-toolbar__primary {
+      border-color: var(--#{$prefix}border-color) !important;
+      border-bottom: 1px solid var(--#{$prefix}border-color) !important;
+    }
+  }
+
+  .tox-collection--toolbar .tox-collection__item {
+    color: var(--#{$prefix}gray-500) !important;
+  }
+  .tox-tbtn--enabled {
+    background-color: var(--#{$prefix}secondary-bg) !important;
+  }
+  .tox-collection__item--enabled {
+    background-color: var(--#{$prefix}secondary-bg) !important;
+  }
+  .tox-collection__item--active {
+    background-color: var(--#{$prefix}secondary-bg) !important;
+  }
+  .tox-collection__group-heading {
+    background-color: var(--#{$prefix}tertiary-bg) !important ;
+  }
+  .tox-collection__item {
+    color: var(--#{$prefix}body-color) !important;
+  }
+  .tox-collection--list .tox-collection__item--active {
+    background-color: var(--#{$prefix}secondary-bg) !important;
+  }
+  .tox-collection__group {
+    border-color: var(--#{$prefix}border-color) !important;
+  }
+  .tox-split-button {
+    &:focus,
+    &:active {
+      background: var(--#{$prefix}secondary-bg) !important;
+    }
+  }
+}
+
+.tox-tinymce-aux {
+  z-index: 1000 !important;
+}
+
+
+.tox .tox-menu {
+  background-color: var(--#{$prefix}secondary-bg) !important;
+}
+
+.tox .tox-mbtn--active{
+  background-color: var(--#{$prefix}tertiary-bg) !important;
+}
