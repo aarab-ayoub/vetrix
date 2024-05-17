@@ -1,1 +1,3 @@
-# vetrix
+Veltrix is a fully featured premium admin dashboard template built in React Redux Saga with firebase / fake-backend authentication and multi-language supports with developer-friendly codes. We have not used jQuery in this template its pure React Js with CRA and fully components based admin template.
+
+Veltrix is a beautifully crafted, clean & minimal designed admin template with Dark, Light Layouts with RTL options. You can build any type of web application like Saas based interface, eCommerce, CRM, CMS, Project management apps, Admin Panels, etc.
